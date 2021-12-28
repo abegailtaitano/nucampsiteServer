@@ -8,7 +8,7 @@ promotionRouter.route('/')
     .then(promotion => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
-        res.json(promotion);
+        res.json(promotions);
     })
     .catch(err => next(err));
 })

@@ -8,7 +8,7 @@ partnerRouter.route('/')
     .then(partner => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
-        res.json(partner);
+        res.json(partners);
     })
     .catch(err => next(err));
 })
